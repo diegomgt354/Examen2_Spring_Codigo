@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "aadf7f1c-bdf3-4c4e-81c2-ba55c9759c17",
+		"name": "examen2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9126998"
+	},
+	"item": [
+		{
+			"name": "listarEmpresas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8070/api/v1/empresa/listarEmpresas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"v1",
+						"empresa",
+						"listarEmpresas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crearEmpresa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"razonSocial\": \"EMPRESA DE PRUEBAS\",\n  \"tipoDocumento\": \"1\",\n  \"numeroDocumento\": \"1234567890\",\n  \"condicion\": \"HABIDO\",\n  \"direccion\": \"CALLE LAS FLORES 123\",\n  \"distrito\": \"ATE VITARTE\",\n  \"provincia\": \"LIMA\",\n  \"departamento\": \"LIMA\",\n  \"esAgenteRetencion\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/v1/empresa/crearEmpresa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"v1",
+						"empresa",
+						"crearEmpresa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarEmpresa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"razonSocial\": \"EMPRESA DE PRUEBAS EDITADA\",\n  \"tipoDocumento\": \"7\",\n  \"numeroDocumento\": \"5555555555\",\n  \"condicion\": \"EDITADO\",\n  \"direccion\": \"CALLE LAS FLORES 123 EDITADO\",\n  \"distrito\": \"SAN ISIDRO\",\n  \"provincia\": \"CHICLAYO\",\n  \"departamento\": \"LAMBAYEQUE\",\n  \"esAgenteRetencion\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8070/api/v1/empresa/actualizarEmpresa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"v1",
+						"empresa",
+						"actualizarEmpresa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminarEmpresa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8070/api/v1/empresa/eliminarEmpresa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"v1",
+						"empresa",
+						"eliminarEmpresa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8070/api/v1/empresa/buscarPorId/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8070",
+					"path": [
+						"api",
+						"v1",
+						"empresa",
+						"buscarPorId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
